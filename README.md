@@ -14,5 +14,5 @@ eteng wiki 列表
 * **张新航** :https://github.com/zhangxinhang
 * **高建华** :https://github.com/gaojianhua
 * 焦翔宇:
-* 王天亮:https://github.com/skybright9111
+* 王天亮:https://github.com/wangtianliang
 
