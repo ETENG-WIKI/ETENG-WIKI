@@ -11,7 +11,8 @@ eteng wiki 列表
 * hybrid app开发
 
 #成员
-* 张新航:https://github.com/zhangxinhang
-* 高建华:https://github.com/gaojianhua
+* _张新航_:https://github.com/zhangxinhang
+* _高建华_:https://github.com/gaojianhua
 * 焦翔宇:
+* 王天亮:https://github.com/skybright9111
 
