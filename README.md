@@ -2,6 +2,7 @@
 ##简介
 eteng wiki 列表
 主要介绍北京易腾时代平台用法和相关技术知识,具体查看下边的__规划WIKI__
+[详细介绍](http://eteng-wiki.github.io/ETENG-WIKI)
 ##作用
 * eteng wiki说明
 * 新建wiki参考
