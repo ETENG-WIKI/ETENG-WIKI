@@ -1,0 +1,13 @@
+{
+    "name": "stb使用教程",
+    "introduction": "stb使用教程",
+    "title": "页面的 title 标签的内容，非必填",
+    "keywords": "stb",
+    "description": "页面的 description 标签的内容，非必填",
+    "path": {
+        "content": "docs",
+        "images": "引用图片的文件夹路径，相对路径绝对路径皆可，默认为根目录下的 images 文件夹，非必填",
+        "readme": "关于页面的路径，相对路径绝对路径皆可，默认根目录下的 README.md，非必填",
+        "toc": "目录的路径，相对路径绝对路径皆可，默认根目录下的 TOC.md，非必填"
+        }
+}

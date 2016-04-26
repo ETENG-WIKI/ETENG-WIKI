@@ -1,0 +1,7 @@
+site_name: 易腾WIKI列表
+pages:
+- Home: index.md
+- About: about-wiki.md
+- Start: start.md
+- Contact: contact.md
+theme: readthedocs
