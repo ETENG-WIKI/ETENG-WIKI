@@ -25,20 +25,18 @@
 one 
 
 	- 关于我们
-	    - [关于极客学院](about-us.md)
-	    - [关于极客学院 Wiki](about-wiki.md)
-	- [联系我们](contact.md)  
+	    - [关于极客学院] \(about-us.md)
+	    - [关于极客学院 Wiki]\(about-wiki.md)
+	- [联系我们]\(contact.md)  
 or like
 	
-	- [前言](eBook/preface.md)
+	- [前言]\(eBook/preface.md)
 	- 第一部分：学习 Go 语言
 	    - 第1章：Go 语言的起源，发展与普及
-	        - 1.1 [起源与发展](eBook/01.1.md)
-		    - 1.2 [语言的主要特性与发展的环境和影响因素](eBook/01.2.md)
+	        - 1.1 [起源与发展]\(eBook/01.1.md)
+		    - 1.2 [语言的主要特性与发展的环境和影响因素]\(eBook/01.2.md)
 	    - 第2章：安装与运行环境
-		    - 2.1 [平台与架构](eBook/02.1.md)
-		    - 2.2 [Go 环境变量](eBook/02.2.md)
-		    - 2.3 [在 Linux 上安装 Go](eBook/02.3.md)
+		    - 2.1 [平台与架构]\(eBook/02.1.md)
 
 
 ## 示例

@@ -8,7 +8,8 @@ eteng wiki 列表
 * 编写,发布wiki教程
 
 ##教程
-https://
+如果您想贡献我们ETENG-WIKI [联系我们](docs/contact.md) ,教程如下:
+http://eteng-wiki.github.io/ETENG-WIKI/start/
 
 
 #规划WIKI:
@@ -22,7 +23,7 @@ https://
 
 
 
-#易腾知识库全部成员
+#ETENG-WIKI成员
 * **张新航** : https://github.com/zhangxinhang
 * **高建华** : https://github.com/gaojianhua
 * 焦翔宇:
