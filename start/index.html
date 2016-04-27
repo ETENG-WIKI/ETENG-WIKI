@@ -273,10 +273,26 @@ mkdocs, version 0.15.2
 <p>在***.md 中编写即可 </p>
 <h2 id="_3">发布</h2>
 <ul>
-<li>极课wiki发布</li>
-<li>通过github发布
-待续.......... 累了</li>
+<li>
+<p>极课wiki发布
+  略.......</p>
+</li>
+<li>
+<p>通过mkdocs github发布</p>
+</li>
 </ul>
+<p>GitHub Pages</p>
+<p>If you host the source code for a project on GitHub, you can easily use GitHub Pages to host the documentation for your project. After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:</p>
+<pre><code>mkdocs gh-deploy --clean
+</code></pre>
+<p>That's it! Behind the scenes, MkDocs will build your docs and use the ghp-import tool to commit them to the gh-pages branch and push the gh-pages branch to GitHub.</p>
+<p>Use mkdocs gh-deploy --help to get a full list of options available for the gh-deploy command.</p>
+<p>Be aware that you will not be able to review the built site before it is pushed to GitHub. Therefore, you may want to verify any changes you make to the docs beforehand by using the build or serve commands and reviewing the built files locally.</p>
+<pre><code>Warning
+
+You should never edit files in your gh-pages branch by hand if you're using the gh-deploy command because you will lose your work.
+</code></pre>
+<p>待续.......... 累了</p>
               
             </div>
           </div>
