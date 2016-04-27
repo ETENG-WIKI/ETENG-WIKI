@@ -133,10 +133,14 @@ __mkdocs.yml__ 增加配置指向
   略.......
   
 * 通过mkdocs github发布
+
+
 GitHub Pages
+
 If you host the source code for a project on GitHub, you can easily use GitHub Pages to host the documentation for your project. After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:
 
 	mkdocs gh-deploy --clean
+
 That's it! Behind the scenes, MkDocs will build your docs and use the ghp-import tool to commit them to the gh-pages branch and push the gh-pages branch to GitHub.
 
 Use mkdocs gh-deploy --help to get a full list of options available for the gh-deploy command.
