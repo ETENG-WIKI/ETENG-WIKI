@@ -2,7 +2,14 @@
 ## 发布方式
 * 极课学院wiki
 * 利用MKDocs 在github 发布
-该模板包含了两种发布方式的配置
+* 利用gitbook 发布在gitbook 或者 github 上
+
+该模板包含了 极课学院wiki 和 MKDocs 两种发布方式的配置
+
+__gitbook 请参考__  
+中文教程: http://www.chengweiyang.cn/gitbook/index.html  
+官方Docs: http://toolchain.gitbook.com/  
+官方github: https://github.com/GitbookIO/gitbook  
 
 ## 极课wiki 配置
 
