@@ -78,26 +78,19 @@
                 
                     <li><a class="toctree-l4" href="#_1">发布方式</a></li>
                 
-                    <li><a class="toctree-l4" href="#wiki">极课wiki 配置</a></li>
+            
+                <li class="toctree-l3"><a href="#wiki">快速开始,贡献一个wiki</a></li>
                 
-                    <li><a class="toctree-l4" href="#_2">示例</a></li>
+                    <li><a class="toctree-l4" href="#_2">安装</a></li>
+                
+                    <li><a class="toctree-l4" href="#wiki_1">贡献给一个wiki</a></li>
+                
+                    <li><a class="toctree-l4" href="#_3">发布</a></li>
                 
                     <li><a class="toctree-l4" href="#mkdocs">MKDocs 配置</a></li>
                 
             
-                <li class="toctree-l3"><a href="#wiki_1">极课学院 wiki</a></li>
-                
-            
                 <li class="toctree-l3"><a href="#mkdocs-doc">MkDocs doc</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#wiki_2">快速开始,贡献一个wiki</a></li>
-                
-                    <li><a class="toctree-l4" href="#installation">Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#wiki_3">贡献给一个wiki</a></li>
-                
-                    <li><a class="toctree-l4" href="#_3">发布</a></li>
                 
             
             </ul>
@@ -147,85 +140,49 @@
                 <h1 id="eteng-wiki">ETENG-WIKI构建说明</h1>
 <h2 id="_1">发布方式</h2>
 <ul>
-<li>极课学院wiki</li>
 <li>利用MKDocs 在github 发布</li>
-<li>利用gitbook 发布在gitbook 或者 github 上</li>
 </ul>
-<p>该模板包含了 极课学院wiki 和 MKDocs 两种发布方式的配置</p>
-<p><strong>gitbook 请参考</strong><br />
-中文教程: http://www.chengweiyang.cn/gitbook/index.html<br />
-官方Docs: http://toolchain.gitbook.com/<br />
-官方github: https://github.com/GitbookIO/gitbook  </p>
-<h2 id="wiki">极课wiki 配置</h2>
+<h1 id="wiki">快速开始,贡献一个wiki</h1>
+<h2 id="_2">安装</h2>
 <ul>
-<li>
-<p>可以通过根目录下的 <strong>config.json</strong> 文件配置自定义参数，具体如下：</p>
-<p>{
-    "name": "项目名称，必填",
-    "introduction": "Wiki 首页的项目介绍，必填",
-    "title": "页面的 title 标签的内容，非必填",
-    "keywords": "页面的 keywords 标签的内容，非必填",
-    "description": "页面的 description 标签的内容，非必填",
-    "path": {
-        "content": "正文的文件夹路径，相对路径绝对路径皆可，默认根目录，非必填",
-        "images": "引用图片的文件夹路径，相对路径绝对路径皆可，默认为根目录下的 images 文件夹，非必填",
-        "readme": "关于页面的路径，相对路径绝对路径皆可，默认根目录下的 README.md，非必填",
-        "toc": "目录的路径，相对路径绝对路径皆可，默认根目录下的 TOC.md，非必填"
-        }
-}
-* 通过 <strong>TOC.md</strong>配置文章目录
-one </p>
+<li>安装python<a href="https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi">点击下载2.7</a>
+MkDocs 支持 Python 2.6, 2.7, 3.3, 3.4,3.5 现在最好先用2.7
+<img alt="env" src="../img/pythoninstall.png" /></li>
+</ul>
+<pre><code>$ python --version
+Python 2.7.2
+$ pip --version
+pip 1.5.2
+</code></pre>
+
 <ul>
-<li>关于我们<ul>
-<li>[关于极客学院] (about-us.md)</li>
-<li>[关于极客学院 Wiki](about-wiki.md)</li>
+<li>用pip安装mkdocs:</li>
 </ul>
-</li>
-<li>
-<p>[联系我们](contact.md)<br />
-or like</p>
-</li>
-<li>
-<p>[前言](eBook/preface.md)</p>
-</li>
-<li>第一部分：学习 Go 语言<ul>
-<li>第1章：Go 语言的起源，发展与普及<ul>
-<li>1.1 [起源与发展](eBook/01.1.md)</li>
-<li>1.2 [语言的主要特性与发展的环境和影响因素](eBook/01.2.md)</li>
-</ul>
-</li>
-<li>第2章：安装与运行环境<ul>
-<li>2.1 [平台与架构](eBook/02.1.md)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="_2">示例</h2>
-<p>GitHub 仓库地址：https://github.com/Unknwon/the-way-to-go_ZH_CN<br />
-Wiki 项目地址：http://wiki.jikexueyuan.com/project/the-way-to-go/  </p>
-<pre><code>{
-    "name": "Go 入门指南",
-    "introduction": "Go 经典书籍《The Way To Go》的中文译本。",
-    "path": {
-        "content": "eBook",
-        "readme": "README_gc.md"
-    }
-
-}
+<pre><code>pip install mkdocs
+$ mkdocs --version
+mkdocs, version 0.15.2
 </code></pre>
-<p>我们最基本配置为:</p>
-<pre><code>{
-    "name": "WIKI-NAME",
-    "introduction": "WIKI INTRODUCTION ",
-    "path": {
-        "content": "docs"
-    }
 
-}
+<hr />
+<h2 id="wiki_1">贡献给一个wiki</h2>
+<p>首先加入 <strong>易腾知识库</strong> 这个组织 ,<a href="../contact/"><strong>联系我们</strong></a><br />
+ 例如我贡献ETENG-WIKI这个项目</p>
+<pre><code>git clone https://github.com/ETENG-WIKI/ETENG-WIKI.git
+cd  ETENG-WIKI
+mkdocs serve
 </code></pre>
+
+<p>在浏览器中 Running at: http://127.0.0.1:8000/ 就可看到现在的效果 </p>
+<p>增加一页   在docs 中新建***.md<br />
+<strong>mkdocs.yml</strong> 增加配置指向</p>
+<p>在***.md 中编写即可 </p>
+<h2 id="_3">发布</h2>
+<ul>
+<li>通过mkdocs github发布</li>
+</ul>
+<pre><code>mkdocs gh-deploy --clean
+</code></pre>
+
 <h2 id="mkdocs">MKDocs 配置</h2>
 <h3 id="project-layout">Project layout</h3>
 <pre><code>mkdocs.yml    # The configuration file.
@@ -242,61 +199,8 @@ pages:
 - Contact: contact.md
 theme: readthedocs
 </code></pre>
-<h1 id="wiki_1">极课学院 wiki</h1>
-<p>配置说明 ： http://wiki.jikexueyuan.com/project/help/config-json.html</p>
 <h1 id="mkdocs-doc">MkDocs doc</h1>
 <p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h1 id="wiki_2">快速开始,贡献一个wiki</h1>
-<h2 id="installation">Installation</h2>
-<p>In order to install MkDocs you'll need Python installed on your system, as well as the Python package manager, pip. You can check if you have these already installed like so:</p>
-<pre><code>$ python --version
-Python 2.7.2
-$ pip --version
-pip 1.5.2
-</code></pre>
-<p>MkDocs supports Python 2.6, 2.7, 3.3, 3.4 and 3.5.</p>
-<p>On Windows we recommend that you install Python and pip with <a href="https://chocolatey.org/">Chocolatey</a> .</p>
-<p>Install the mkdocs package using pip:</p>
-<pre><code>pip install mkdocs
-</code></pre>
-<p>You should now have the mkdocs command installed on your system. Run mkdocs --version to check that everything worked okay.</p>
-<pre><code>$ mkdocs --version
-mkdocs, version 0.15.2
-</code></pre>
-<hr />
-<h2 id="wiki_3">贡献给一个wiki</h2>
-<p>首先加入 <strong>易腾知识库</strong> 这个组织 ,<a href="../contact/">联系我们</a><br />
- 例如我贡献ETENG-WIKI这个项目</p>
-<pre><code> git clone https://github.com/ETENG-WIKI/ETENG-WIKI.git
- cd ETENG-WIKI
- mkdocs serve
-</code></pre>
-<p>在浏览器中 Running at: http://127.0.0.1:8000/ 就可看到现在的效果 </p>
-<p>增加一页   在docs 中新建***.md<br />
-<strong>TOC.md</strong>增加配置指向<br />
-<strong>mkdocs.yml</strong> 增加配置指向</p>
-<p>在***.md 中编写即可 </p>
-<h2 id="_3">发布</h2>
-<ul>
-<li>
-<p>极课wiki发布
-  略.......</p>
-</li>
-<li>
-<p>通过mkdocs github发布</p>
-</li>
-</ul>
-<p>GitHub Pages</p>
-<p>If you host the source code for a project on GitHub, you can easily use GitHub Pages to host the documentation for your project. After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:</p>
-<pre><code>mkdocs gh-deploy --clean
-</code></pre>
-<p>That's it! Behind the scenes, MkDocs will build your docs and use the ghp-import tool to commit them to the gh-pages branch and push the gh-pages branch to GitHub.</p>
-<p>Use mkdocs gh-deploy --help to get a full list of options available for the gh-deploy command.</p>
-<p>Be aware that you will not be able to review the built site before it is pushed to GitHub. Therefore, you may want to verify any changes you make to the docs beforehand by using the build or serve commands and reviewing the built files locally.</p>
-<pre><code>Warning
-
-You should never edit files in your gh-pages branch by hand if you're using the gh-deploy command because you will lose your work.
-</code></pre>
 <p>待续.......... 累了</p>
               
             </div>
