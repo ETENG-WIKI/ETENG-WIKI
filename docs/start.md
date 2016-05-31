@@ -1,75 +1,55 @@
 # ETENG-WIKI构建说明
 ## 发布方式
-* 极课学院wiki
+
 * 利用MKDocs 在github 发布
-* 利用gitbook 发布在gitbook 或者 github 上
 
-该模板包含了 极课学院wiki 和 MKDocs 两种发布方式的配置
+# 快速开始,贡献一个wiki
 
-__gitbook 请参考__  
-中文教程: http://www.chengweiyang.cn/gitbook/index.html  
-官方Docs: http://toolchain.gitbook.com/  
-官方github: https://github.com/GitbookIO/gitbook  
+##安装
 
-## 极课wiki 配置
-
-* 可以通过根目录下的 __config.json__ 文件配置自定义参数，具体如下：
-
-	{
-	    "name": "项目名称，必填",
-	    "introduction": "Wiki 首页的项目介绍，必填",
-	    "title": "页面的 title 标签的内容，非必填",
-	    "keywords": "页面的 keywords 标签的内容，非必填",
-	    "description": "页面的 description 标签的内容，非必填",
-	    "path": {
-	        "content": "正文的文件夹路径，相对路径绝对路径皆可，默认根目录，非必填",
-	        "images": "引用图片的文件夹路径，相对路径绝对路径皆可，默认为根目录下的 images 文件夹，非必填",
-	        "readme": "关于页面的路径，相对路径绝对路径皆可，默认根目录下的 README.md，非必填",
-	        "toc": "目录的路径，相对路径绝对路径皆可，默认根目录下的 TOC.md，非必填"
-	        }
-	}
-* 通过 __TOC.md__配置文章目录
-one 
-
-	- 关于我们
-	    - [关于极客学院] \(about-us.md)
-	    - [关于极客学院 Wiki]\(about-wiki.md)
-	- [联系我们]\(contact.md)  
-or like
+* 安装python[点击下载2.7](https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi)
+MkDocs 支持 Python 2.6, 2.7, 3.3, 3.4,3.5 现在最好先用2.7
+![env](img/pythoninstall.png)
+```
+$ python --version
+Python 2.7.2
+$ pip --version
+pip 1.5.2
+```
 	
-	- [前言]\(eBook/preface.md)
-	- 第一部分：学习 Go 语言
-	    - 第1章：Go 语言的起源，发展与普及
-	        - 1.1 [起源与发展]\(eBook/01.1.md)
-		    - 1.2 [语言的主要特性与发展的环境和影响因素]\(eBook/01.2.md)
-	    - 第2章：安装与运行环境
-		    - 2.1 [平台与架构]\(eBook/02.1.md)
+* 用pip安装mkdocs:
 
-
-## 示例
-GitHub 仓库地址：https://github.com/Unknwon/the-way-to-go_ZH_CN  
-Wiki 项目地址：http://wiki.jikexueyuan.com/project/the-way-to-go/  
-
-	{
-	    "name": "Go 入门指南",
-	    "introduction": "Go 经典书籍《The Way To Go》的中文译本。",
-	    "path": {
-	        "content": "eBook",
-	        "readme": "README_gc.md"
-	    }
+```
+pip install mkdocs
+$ mkdocs --version
+mkdocs, version 0.15.2
+```
 	
-	}
-	
-我们最基本配置为:
+------------------------------------
+## 贡献给一个wiki 
+ 首先加入 __易腾知识库__ 这个组织 ,[__联系我们__](contact.md)  
+ 例如我贡献ETENG-WIKI这个项目
 
-	{
-	    "name": "WIKI-NAME",
-	    "introduction": "WIKI INTRODUCTION ",
-	    "path": {
-	        "content": "docs"
-	    }
-	
-	}
+``` 
+git clone https://github.com/ETENG-WIKI/ETENG-WIKI.git
+cd	ETENG-WIKI
+mkdocs serve
+```
+
+在浏览器中 Running at: http://127.0.0.1:8000/ 就可看到现在的效果 
+
+增加一页   在docs 中新建***.md  
+__mkdocs.yml__ 增加配置指向
+
+在***.md 中编写即可 
+## 发布 
+  
+* 通过mkdocs github发布
+
+```
+mkdocs gh-deploy --clean
+```
+
 
 ## MKDocs 配置
 
@@ -91,72 +71,10 @@ Wiki 项目地址：http://wiki.jikexueyuan.com/project/the-way-to-go/
 	theme: readthedocs
    
 
-# 极课学院 wiki
-配置说明 ： http://wiki.jikexueyuan.com/project/help/config-json.html
-
 # MkDocs doc 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
-# 快速开始,贡献一个wiki
 
-##Installation
-In order to install MkDocs you'll need Python installed on your system, as well as the Python package manager, pip. You can check if you have these already installed like so:
-
-	$ python --version
-	Python 2.7.2
-	$ pip --version
-	pip 1.5.2
-MkDocs supports Python 2.6, 2.7, 3.3, 3.4 and 3.5.
-
-On Windows we recommend that you install Python and pip with [Chocolatey](https://chocolatey.org/) .
-
-Install the mkdocs package using pip:
-
-	pip install mkdocs
-You should now have the mkdocs command installed on your system. Run mkdocs --version to check that everything worked okay.
-
-	$ mkdocs --version
-	mkdocs, version 0.15.2
-	
-------------------------------------
-## 贡献给一个wiki 
- 首先加入 __易腾知识库__ 这个组织 ,[联系我们](contact.md)  
- 例如我贡献ETENG-WIKI这个项目
- 
-	 git clone https://github.com/ETENG-WIKI/ETENG-WIKI.git
-	 cd	ETENG-WIKI
-	 mkdocs serve
-	 
-在浏览器中 Running at: http://127.0.0.1:8000/ 就可看到现在的效果 
-
-增加一页   在docs 中新建***.md  
-__TOC.md__增加配置指向  
-__mkdocs.yml__ 增加配置指向
-
-在***.md 中编写即可 
-## 发布 
-
-* 极课wiki发布
-  略.......
-  
-* 通过mkdocs github发布
-
-
-GitHub Pages
-
-If you host the source code for a project on GitHub, you can easily use GitHub Pages to host the documentation for your project. After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:
-
-	mkdocs gh-deploy --clean
-
-That's it! Behind the scenes, MkDocs will build your docs and use the ghp-import tool to commit them to the gh-pages branch and push the gh-pages branch to GitHub.
-
-Use mkdocs gh-deploy --help to get a full list of options available for the gh-deploy command.
-
-Be aware that you will not be able to review the built site before it is pushed to GitHub. Therefore, you may want to verify any changes you make to the docs beforehand by using the build or serve commands and reviewing the built files locally.
-
-	Warning
-	
-	You should never edit files in your gh-pages branch by hand if you're using the gh-deploy command because you will lose your work.
 
 
 待续.......... 累了
