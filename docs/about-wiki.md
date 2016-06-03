@@ -6,11 +6,14 @@
 * Mysql数据库使用
 * [微信公众平台开发教程](https://github.com/ETENG-WIKI/WSP-WIKI)
 * [Hybrid APP 开发教程](https://github.com/ETENG-WIKI/HAC-WIKI)
+* [etStyle](http://zhaoyang3916.github.io/etStyle/#/index/main)
+* [ETengFont](http://zhaoyang3916.github.io/ETengFont/)
 
 #WIKI负责人
 
 * 易腾知识库列表  
-   gaojianhua    zhangxinhang
+
+   > **gaojianhua**    **zhangxinhang**
    
 * stb平台教程   
 
@@ -24,6 +27,13 @@
 
 * hybrid app开发教程
 
+* etStyle
+  > **zhaoyang**
+
+* ETengFont
+  > **zhaoyang**
+
+
 
 
 #易腾知识库全部成员
@@ -33,4 +43,5 @@
 * [王天亮](https://github.com/wangtianliang)
 * [王冲冲](https://github.com/wangchongchong)
 * [王凯]() 
+* [赵洋](https://github.com/zhaoyang3916)
 
