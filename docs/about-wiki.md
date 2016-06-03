@@ -5,7 +5,7 @@
 * [Linux服务器部署教程](https://github.com/ETENG-WIKI/LINUX-SERVER)
 * Mysql数据库使用
 * [微信公众平台开发教程](https://github.com/ETENG-WIKI/WSP-WIKI)
-* Hybrid APP 开发教程
+* [Hybrid APP 开发教程](https://github.com/ETENG-WIKI/HAC-WIKI)
 
 #WIKI负责人
 
